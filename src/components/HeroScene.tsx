@@ -1,4 +1,4 @@
-import { useThree } from '@react-three/fiber'
+import { useFrame, useThree } from '@react-three/fiber'
 import { EffectComposer, Bloom } from '@react-three/postprocessing'
 import { useEffect, useMemo, useRef } from 'react'
 import { Color, ShaderMaterial, Vector2 } from 'three'
@@ -22,7 +22,7 @@ export function HeroScene() {
 
 function HeroPlane() {
   const materialRef = useRef<ShaderMaterial | null>(null)
-  const { size, invalidate } = useThree()
+  const { size } = useThree()
 
   const uniforms = useMemo(
     () => ({
@@ -40,23 +40,11 @@ function HeroPlane() {
     materialRef.current.uniforms.uResolution.value.set(size.width, size.height)
   }, [size.width, size.height])
 
-  useEffect(() => {
-    let frameId: number
-    
-    // Drive the animation outside of R3F's render cycle so invalidate() works 
-    // with frameloop="demand" on the parent Canvas.
-    const tick = (time: number) => {
-      if (materialRef.current) {
-        materialRef.current.uniforms.uTime.value = time * 0.001
-      }
-      invalidate()
-      frameId = requestAnimationFrame(tick)
+  useFrame((state) => {
+    if (materialRef.current) {
+      materialRef.current.uniforms.uTime.value = state.clock.elapsedTime * 0.5
     }
-
-    frameId = requestAnimationFrame(tick)
-
-    return () => cancelAnimationFrame(frameId)
-  }, [invalidate])
+  })
 
   return (
     <mesh>

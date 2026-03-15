@@ -210,10 +210,10 @@ function App() {
       <section className="hero">
         <div className="hero-bg parallax" data-speed="0.06" aria-hidden="true">
           <Canvas
-            dpr={[1, 1.25]}
+            dpr={[1, 2]}
             gl={{ antialias: true, alpha: true, powerPreference: 'high-performance' }}
             camera={{ position: [0, 0, 1] }}
-            frameloop="demand"
+            frameloop="always"
           >
             <Suspense fallback={null}>
               <HeroScene />
