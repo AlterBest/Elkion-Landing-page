@@ -1,0 +1,28 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#7AA3FF" stroke-opacity="0.28" stroke-width="1.2">
+    <circle cx="200" cy="160" r="4" fill="#7AA3FF" />
+    <circle cx="320" cy="110" r="3" fill="#7AA3FF" />
+    <circle cx="460" cy="170" r="3" fill="#7AA3FF" />
+    <circle cx="600" cy="120" r="2.5" fill="#7AA3FF" />
+    <circle cx="760" cy="190" r="4" fill="#7AA3FF" />
+    <circle cx="920" cy="140" r="3" fill="#7AA3FF" />
+    <circle cx="1040" cy="200" r="3" fill="#7AA3FF" />
+    <path d="M200 160L320 110L460 170L600 120L760 190L920 140L1040 200" />
+  </g>
+  <g stroke="#7AA3FF" stroke-opacity="0.22" stroke-width="1">
+    <circle cx="180" cy="520" r="3" fill="#7AA3FF" />
+    <circle cx="300" cy="460" r="2.5" fill="#7AA3FF" />
+    <circle cx="420" cy="520" r="3.2" fill="#7AA3FF" />
+    <circle cx="540" cy="480" r="2" fill="#7AA3FF" />
+    <circle cx="700" cy="540" r="3" fill="#7AA3FF" />
+    <circle cx="840" cy="500" r="2.5" fill="#7AA3FF" />
+    <circle cx="980" cy="560" r="3" fill="#7AA3FF" />
+    <path d="M180 520L300 460L420 520L540 480L700 540L840 500L980 560" />
+  </g>
+  <g stroke="#7AA3FF" stroke-opacity="0.18" stroke-width="0.8">
+    <circle cx="520" cy="360" r="2.5" fill="#7AA3FF" />
+    <circle cx="600" cy="320" r="2" fill="#7AA3FF" />
+    <circle cx="690" cy="360" r="2.5" fill="#7AA3FF" />
+    <path d="M520 360L600 320L690 360" />
+  </g>
+</svg>
