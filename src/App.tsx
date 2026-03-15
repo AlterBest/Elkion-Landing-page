@@ -226,7 +226,9 @@ function App() {
             <span className="hero-kicker">The future of infrastructure</span>
           </div>
           <h1 className="hero-animate hero-title">
-            A unified <span className="hero-emphasis">data engine</span> built for enterprise scale.
+            A unified <span className="hero-emphasis">data</span><br />
+            <span className="hero-emphasis">engine</span> built for<br />
+            enterprise scale.
           </h1>
           <p className="hero-sub hero-animate">
             High-precision processing, predictive modeling, and durable storage.

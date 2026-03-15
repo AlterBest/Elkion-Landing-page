@@ -326,17 +326,14 @@
   margin: 0 auto;
 }
 
-.hero-title span {
-  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
-  font-weight: 500;
-  color: #9cc0ff;
-}
-
 .hero-emphasis {
-  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-family: 'Playfair Display', serif;
   font-style: italic;
-  color: #4f86ff;
-  text-shadow: 0 0 40px rgba(79, 134, 255, 0.35);
+  font-weight: 600;
+  color: #3b82f6; /* Elegant reference blue */
+  position: relative;
+  letter-spacing: -0.02em;
+  text-shadow: 0 0 30px rgba(59, 130, 246, 0.4); /* Very soft blue halo */
 }
 
 .hero-kicker-block {
@@ -375,10 +372,13 @@
 }
 
 .hero h1 {
-  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   font-size: clamp(2.6rem, 4vw, 4.6rem);
   line-height: 1.05;
   margin: 0 0 24px;
+  color: #ffffff; /* Crisp white hero text */
+  letter-spacing: -0.03em;
+  font-weight: 600; /* Semi-bold */
 }
 
 .hero-sub {
@@ -436,10 +436,12 @@
 }
 
 .hero-metric-value {
-  font-family: 'Space Grotesk', system-ui, sans-serif;
-  font-size: 2.2rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
   font-style: italic;
+  font-weight: 600;
   color: #ffffff;
+  letter-spacing: -0.02em;
 }
 
 .hero-metric-desc {
