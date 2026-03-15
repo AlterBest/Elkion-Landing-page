@@ -1,6 +1,8 @@
 .page {
   position: relative;
   overflow: hidden;
+  overflow-x: hidden;
+  width: 100%;
   color: var(--text);
 }
 
@@ -128,6 +130,12 @@
 
 .nav.nav-scrolled .nav-links a:hover {
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
 }
 
 .nav.nav-scrolled .nav-indicator {
@@ -1287,6 +1295,11 @@
 
   .nav-indicator {
     top: 4px;
+    display: none;
+  }
+
+  .nav-cta {
+    display: none;
   }
 
   .trust-stack-cards {
@@ -1337,6 +1350,7 @@
   .pipeline-stepper {
     grid-template-columns: 1fr;
     padding: 20px 0;
+    justify-items: center;
   }
 
   .pipeline-spine {
@@ -1345,6 +1359,10 @@
 
   .pipeline-node .pipeline-card {
     transform: none;
+  }
+  
+  .pipeline-dot {
+    display: none;
   }
 }
 
@@ -1358,6 +1376,15 @@
     display: none;
   }
 
+  .hero h1 {
+    font-size: clamp(2.2rem, 8vw, 3rem);
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+    padding: 0 16px;
+  }
+
   .hero-content {
     padding: 140px 0 80px;
     text-align: center;
@@ -1369,6 +1396,26 @@
 
   .section-air {
     padding: 90px 6vw;
+  }
+  
+  .section h2 {
+    font-size: clamp(1.8rem, 6vw, 2.2rem);
+  }
+  
+  .trust-panel {
+    margin-bottom: 30px;
+  }
+  
+  .trust-stack-cards {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .trust-card {
+    width: 100%;
+    transform: none !important;
   }
 }
 

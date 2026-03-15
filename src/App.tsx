@@ -154,7 +154,7 @@ function App() {
             bars,
             { width: '0%' },
             {
-              width: (index, element) =>
+              width: (_index, element) =>
                 (element as HTMLElement).dataset.value ?? '70%',
               duration: 0.9,
               ease: 'power2.out',
