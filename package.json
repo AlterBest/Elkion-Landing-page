@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@fontsource/ibm-plex-sans": "^5.2.8",
@@ -34,6 +35,7 @@
     "zustand": "^5.0.11"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.28.0",
     "@eslint/js": "^9.39.4",
     "@tailwindcss/postcss": "^4.2.1",
     "@types/node": "^24.12.0",
@@ -48,6 +50,7 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.56.1",
     "vite": "^8.0.0",
-    "vite-plugin-glsl": "^1.5.5"
+    "vite-plugin-glsl": "^1.5.5",
+    "wrangler": "^4.73.0"
   }
 }
